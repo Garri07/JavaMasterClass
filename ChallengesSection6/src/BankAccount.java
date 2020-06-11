@@ -1,10 +1,23 @@
 public class BankAccount {
+
     private int accountNumber;
     private int balance;
     private String name;
     private String email;
     private int phoneNumber;
 
+    //how to create a constructor
+    public BankAccount() {
+        //this is an empty constructor
+    }
+
+    public BankAccount(String name, int accountNumber, String email, int phoneNumber){
+        //this is a constructor with the parameters name, accountNumber, email, and phoneNumber
+        this.name = name;
+        this.accountNumber = accountNumber;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
 
     public void deposit (int amount) {
         this.balance += amount;

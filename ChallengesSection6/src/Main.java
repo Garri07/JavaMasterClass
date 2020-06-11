@@ -24,5 +24,8 @@ public class Main {
 
         System.out.println(myAccount.getBalance());
         //should be 150
+
+        //instantiating an object with parameters.
+        BankAccount otherAccount = new BankAccount("Nelson", 1234567, "nelson@email.com", 03112345);
     }
 }
