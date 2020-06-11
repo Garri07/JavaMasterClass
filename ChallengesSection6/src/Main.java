@@ -27,5 +27,20 @@ public class Main {
 
         //instantiating an object with parameters.
         BankAccount otherAccount = new BankAccount("Nelson", 1234567, "nelson@email.com", 03112345);
+
+        System.out.println("\n");
+
+        //VipCustomer Challenge
+        VipCustomer me = new VipCustomer(); //calls the empty constructor with default values
+        System.out.println(me.getName()); //should be Alexandra
+        System.out.println(me.getEmail()); //should be email@email.com
+        System.out.println(me.getCreditLimit()); //should be 10000
+
+        System.out.println("\n");
+
+        VipCustomer nelson = new VipCustomer("Nelson", "nelson@email.com");
+        System.out.println(nelson.getName()); //should be nelson
+        System.out.println(nelson.getEmail()); //should ne nelson@email.com
+        System.out.println(nelson.getCreditLimit()); //should be 10000
     }
 }
